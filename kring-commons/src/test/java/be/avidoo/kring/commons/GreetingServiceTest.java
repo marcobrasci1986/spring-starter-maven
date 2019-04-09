@@ -1,6 +1,5 @@
 package be.avidoo.kring.commons;
 
-import be.avidoo.kring.commons.config.ObjectMapperConfiguration;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import org.junit.Before;
 import org.junit.Test;
@@ -13,7 +12,7 @@ import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;
 
 @RunWith(SpringRunner.class)
-@SpringBootTest(classes = {GreetingService.class, ObjectMapperConfiguration.class})
+@SpringBootTest(classes = {GreetingService.class})
 public class GreetingServiceTest {
 
     @Autowired

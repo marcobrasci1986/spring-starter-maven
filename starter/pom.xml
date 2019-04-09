@@ -29,7 +29,7 @@
             <groupId>be.avidoo</groupId>
             <artifactId>kring-commons</artifactId>
             <version>${project.version}</version>
-            <optional>true</optional>
+            <!--<optional>true</optional>-->
         </dependency>
 
     </dependencies>
