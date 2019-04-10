@@ -9,6 +9,7 @@ import org.springframework.context.annotation.Import;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
+import java.time.Month;
 
 @Service
 @Import(ObjectMapperConfiguration.class)
@@ -22,7 +23,7 @@ public class GreetingService {
     }
 
     public String sayHello(String name) throws JsonProcessingException {
-        Person person = new Person("Mike", LocalDateTime.now());
+        Person person = new Person("Mike", LocalDateTime.of(2019, Month.APRIL, 9, 0, 0));
 
 
         String objectAsJson = objectMapper.writeValueAsString(person);
